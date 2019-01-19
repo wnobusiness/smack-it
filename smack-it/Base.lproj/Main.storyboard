@@ -402,7 +402,7 @@
                                         <rect key="frame" x="0.0" y="101" width="250" height="21"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwd-So-94Z">
                                         <rect key="frame" x="0.0" y="136" width="250" height="2"/>

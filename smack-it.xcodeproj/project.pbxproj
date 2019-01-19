@@ -21,6 +21,7 @@
 		CEA14A2C21EEEF0800FE6A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA14A2B21EEEF0800FE6A24 /* Assets.xcassets */; };
 		CEA14A2F21EEEF0800FE6A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA14A2D21EEEF0800FE6A24 /* LaunchScreen.storyboard */; };
 		CEEF261321F3C73700DA0E5A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261221F3C73700DA0E5A /* RoundedButton.swift */; };
+		CEEF261521F3D90700DA0E5A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261421F3D90700DA0E5A /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		CEA14A2E21EEEF0800FE6A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA14A3021EEEF0800FE6A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEF261221F3C73700DA0E5A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CEEF261421F3D90700DA0E5A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		FC7D4E28FFC715D7FFCCA011 /* Pods-smack-it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-it.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack-it/Pods-smack-it.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CE170C6321F10857004463F4 /* AuthService.swift */,
+				CEEF261421F3D90700DA0E5A /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				CE50E01921EEFD9E005D785E /* ChannelVC.swift in Sources */,
 				CEEF261321F3C73700DA0E5A /* RoundedButton.swift in Sources */,
 				CE50E01721EEFD87005D785E /* ChatVC.swift in Sources */,
+				CEEF261521F3D90700DA0E5A /* UserDataService.swift in Sources */,
 				CE50E02221EF2532005D785E /* CreateAccountVC.swift in Sources */,
 				CE50E02021EF1D5D005D785E /* LoginVC.swift in Sources */,
 				CE50E01B21EF03E4005D785E /* GradientView.swift in Sources */,

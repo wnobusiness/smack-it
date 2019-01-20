@@ -11,7 +11,7 @@ import Alamofire//make web request easy
 import SwiftyJSON
 
 class AuthService {
-    
+    //Singleton - meaning that this going to be accessible globally and there can only be one instance of it at a time
     static let instance = AuthService()
     
     //saving data in apps
@@ -88,12 +88,11 @@ class AuthService {
 //                    }
 //                }
                 
-                //Using SwiftyJSON
+                //Login user function
                 guard let data = response.data else { return }
                 let json = JSON(data: data)
                 self.userEmail = json["user"].stringValue
                 self.authToken = json["token"].stringValue
-                
                 
                 self.isLoggedIn = true
                 completion(true)

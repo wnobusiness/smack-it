@@ -8,7 +8,7 @@
 
 import Foundation
 
-//Renaming a type
+//typealias-Renaming a type
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
 //URL Constants

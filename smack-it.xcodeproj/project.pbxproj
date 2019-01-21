@@ -24,6 +24,7 @@
 		CEEF261521F3D90700DA0E5A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261421F3D90700DA0E5A /* UserDataService.swift */; };
 		CEEF261721F53AD600DA0E5A /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261621F53AD600DA0E5A /* AvatarPickerVC.swift */; };
 		CEEF261921F53D5900DA0E5A /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261821F53D5900DA0E5A /* AvatarCell.swift */; };
+		CEEF261B21F5546100DA0E5A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF261A21F5546100DA0E5A /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CEEF261421F3D90700DA0E5A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		CEEF261621F53AD600DA0E5A /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		CEEF261821F53D5900DA0E5A /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		CEEF261A21F5546100DA0E5A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		FC7D4E28FFC715D7FFCCA011 /* Pods-smack-it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack-it.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack-it/Pods-smack-it.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				CE50E01A21EF03E4005D785E /* GradientView.swift */,
 				CEEF261221F3C73700DA0E5A /* RoundedButton.swift */,
 				CEEF261821F53D5900DA0E5A /* AvatarCell.swift */,
+				CEEF261A21F5546100DA0E5A /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				CE50E01921EEFD9E005D785E /* ChannelVC.swift in Sources */,
 				CEEF261721F53AD600DA0E5A /* AvatarPickerVC.swift in Sources */,
 				CEEF261321F3C73700DA0E5A /* RoundedButton.swift in Sources */,
+				CEEF261B21F5546100DA0E5A /* CircleImage.swift in Sources */,
 				CE50E01721EEFD87005D785E /* ChatVC.swift in Sources */,
 				CEEF261521F3D90700DA0E5A /* UserDataService.swift in Sources */,
 				CE50E02221EF2532005D785E /* CreateAccountVC.swift in Sources */,

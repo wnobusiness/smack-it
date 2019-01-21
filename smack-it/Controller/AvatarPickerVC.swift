@@ -51,7 +51,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
         return CGSize(width: cellDimension, height: cellDimension)
     }
-    //indicare which avatar the user tapped
+    //indicator which avatar the user tapped
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if avatarType == .dark {
             UserDataService.instance.setAvatarName(avatarName: "dark\(indexPath.item)")

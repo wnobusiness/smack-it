@@ -210,6 +210,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="EV5-YI-5Ey" eventType="touchUpInside" id="zo2-Ot-aCm"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-fj-W8w">
                                 <rect key="frame" x="129.5" y="80" width="116" height="40"/>
@@ -282,14 +285,20 @@
                                     <action selector="createAccountBtnPressed:" destination="EV5-YI-5Ey" eventType="touchUpInside" id="pTb-ak-IUW"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-kR-DRd">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3gd-fj-W8w" firstAttribute="centerX" secondItem="6TC-bV-dH9" secondAttribute="centerX" id="0ta-5j-gOd"/>
+                            <constraint firstItem="DLk-kR-DRd" firstAttribute="centerX" secondItem="6TC-bV-dH9" secondAttribute="centerX" id="3s8-jz-wvk"/>
                             <constraint firstItem="guO-g8-g4a" firstAttribute="top" secondItem="3gd-fj-W8w" secondAttribute="bottom" constant="40" id="4KN-Su-N5W"/>
                             <constraint firstItem="lLP-ke-RJX" firstAttribute="centerX" secondItem="6TC-bV-dH9" secondAttribute="centerX" id="6gh-g1-hci"/>
                             <constraint firstItem="Ysa-Cg-SNJ" firstAttribute="top" secondItem="c9P-hH-a0r" secondAttribute="top" constant="8" id="8ry-3x-Gb2"/>
                             <constraint firstItem="guO-g8-g4a" firstAttribute="centerX" secondItem="6TC-bV-dH9" secondAttribute="centerX" id="BjB-y1-Sis"/>
+                            <constraint firstItem="DLk-kR-DRd" firstAttribute="centerY" secondItem="6TC-bV-dH9" secondAttribute="centerY" constant="-100" id="Nfv-kZ-v19"/>
                             <constraint firstItem="3gd-fj-W8w" firstAttribute="top" secondItem="c9P-hH-a0r" secondAttribute="top" constant="60" id="cOT-xG-HJj"/>
                             <constraint firstItem="c9P-hH-a0r" firstAttribute="trailing" secondItem="Ysa-Cg-SNJ" secondAttribute="trailing" constant="16" id="kxu-i8-T0E"/>
                             <constraint firstItem="lLP-ke-RJX" firstAttribute="top" secondItem="uRD-lD-NpP" secondAttribute="bottom" id="l9N-b7-JKI"/>
@@ -299,6 +308,9 @@
                         <viewLayoutGuide key="safeArea" id="c9P-hH-a0r"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="Fsm-np-dIu" id="aj9-v6-B7m"/>
+                        <outlet property="spinner" destination="DLk-kR-DRd" id="piz-ep-Edx"/>
+                        <outlet property="usernameTxt" destination="poT-Nd-iag" id="nwV-5n-kx1"/>
                         <segue destination="ILM-Hk-abE" kind="show" identifier="toCreateAccount" id="0bY-Jq-7d4"/>
                     </connections>
                 </viewController>

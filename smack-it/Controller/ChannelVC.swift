@@ -26,8 +26,16 @@ class ChannelVC: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfor()
+    }
+    
     //This funtion will be called everytime the app receives a notification
     @objc func userDataDidChange(_ notif: Notification) {
+        setupUserInfor()
+    }
+    
+    func setupUserInfor() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
@@ -38,6 +46,7 @@ class ChannelVC: UIViewController {
             userImg.backgroundColor = UIColor.clear
         }
     }
+    
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {

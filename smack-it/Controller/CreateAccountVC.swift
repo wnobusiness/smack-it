@@ -59,6 +59,7 @@ class CreateAccountVC: UIViewController {
                                 self.spinner.isHidden = true
                                 self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND, sender: nil)
+                                //Notification Post
                                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                             }
                         })
@@ -71,7 +72,7 @@ class CreateAccountVC: UIViewController {
     @IBAction func pickAvatarPressed(_ sender: Any) {
         performSegue(withIdentifier: "toAvatarPicker", sender: nil)
     }
-    
+    //Background color randomly
     @IBAction func pickBGColorPressed(_ sender: Any) {
         let r = CGFloat(arc4random_uniform(255)) / 255
         let g = CGFloat(arc4random_uniform(255)) / 255

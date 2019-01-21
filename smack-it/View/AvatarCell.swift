@@ -32,7 +32,7 @@ class AvatarCell: UICollectionViewCell {
             self.layer.backgroundColor = UIColor.gray.cgColor
         }
     }
-    
+    //the avatar cells
     func setUpView() {
         self.layer.backgroundColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 10

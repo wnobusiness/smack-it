@@ -11,6 +11,7 @@
 		CE170C6421F10857004463F4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE170C6321F10857004463F4 /* AuthService.swift */; };
 		CE218BF421F7BFA2000F0850 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF321F7BFA2000F0850 /* MessageService.swift */; };
 		CE218BF621F7BFD6000F0850 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF521F7BFD6000F0850 /* Channel.swift */; };
+		CE218BF821F7C683000F0850 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF721F7C683000F0850 /* ChannelCell.swift */; };
 		CE50E01221EEFA7B005D785E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01121EEFA7B005D785E /* SWRevealViewController.m */; };
 		CE50E01721EEFD87005D785E /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01621EEFD87005D785E /* ChatVC.swift */; };
 		CE50E01921EEFD9E005D785E /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01821EEFD9E005D785E /* ChannelVC.swift */; };
@@ -37,6 +38,7 @@
 		CE170C6321F10857004463F4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CE218BF321F7BFA2000F0850 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		CE218BF521F7BFD6000F0850 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		CE218BF721F7C683000F0850 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		CE50E00F21EEFA7A005D785E /* smack-it-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-it-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE50E01021EEFA7B005D785E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CE50E01121EEFA7B005D785E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				CEEF261221F3C73700DA0E5A /* RoundedButton.swift */,
 				CEEF261821F53D5900DA0E5A /* AvatarCell.swift */,
 				CEEF261A21F5546100DA0E5A /* CircleImage.swift */,
+				CE218BF721F7C683000F0850 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEF262021F57F4300DA0E5A /* ProfileVC.swift in Sources */,
+				CE218BF821F7C683000F0850 /* ChannelCell.swift in Sources */,
 				CE50E01921EEFD9E005D785E /* ChannelVC.swift in Sources */,
 				CEEF261721F53AD600DA0E5A /* AvatarPickerVC.swift in Sources */,
 				CEEF261321F3C73700DA0E5A /* RoundedButton.swift in Sources */,

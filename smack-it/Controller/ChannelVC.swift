@@ -8,17 +8,20 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
-
+class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     //Outlets
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var userImg: CircleImage!
+    @IBOutlet weak var tableView: UITableView!
     
     //For the close button on CreateAccountVC to go back to the ChannelVC
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         //The space for the menu
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         //Notification observer
@@ -59,6 +62,28 @@ class ChannelVC: UIViewController {
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
         
-        
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "channelCell", for: indexPath) as? ChannelCell {
+            
+            let channel = MessageService.instance.channels[indexPath.row]
+            cell.configureCell(channel: channel)
+            return cell
+        }else {
+            return UITableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.channels.count
+    }
+    
+    
+    
+    
 }

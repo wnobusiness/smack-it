@@ -63,7 +63,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
-    
+    //Channel pressed
     @IBAction func addChannelPressed(_ sender: Any) {
         let addChannel = AddChannelVC()
         addChannel.modalPresentationStyle = .custom

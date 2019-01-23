@@ -12,6 +12,8 @@
 		CE218BF421F7BFA2000F0850 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF321F7BFA2000F0850 /* MessageService.swift */; };
 		CE218BF621F7BFD6000F0850 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF521F7BFD6000F0850 /* Channel.swift */; };
 		CE218BF821F7C683000F0850 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF721F7C683000F0850 /* ChannelCell.swift */; };
+		CE218BFB21F7E55D000F0850 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218BF921F7E55D000F0850 /* AddChannelVC.swift */; };
+		CE218BFC21F7E55D000F0850 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE218BFA21F7E55D000F0850 /* AddChannelVC.xib */; };
 		CE50E01221EEFA7B005D785E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01121EEFA7B005D785E /* SWRevealViewController.m */; };
 		CE50E01721EEFD87005D785E /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01621EEFD87005D785E /* ChatVC.swift */; };
 		CE50E01921EEFD9E005D785E /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50E01821EEFD9E005D785E /* ChannelVC.swift */; };
@@ -39,6 +41,8 @@
 		CE218BF321F7BFA2000F0850 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		CE218BF521F7BFD6000F0850 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		CE218BF721F7C683000F0850 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		CE218BF921F7E55D000F0850 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		CE218BFA21F7E55D000F0850 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		CE50E00F21EEFA7A005D785E /* smack-it-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-it-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE50E01021EEFA7B005D785E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CE50E01121EEFA7B005D785E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				CE50E02121EF2532005D785E /* CreateAccountVC.swift */,
 				CEEF261621F53AD600DA0E5A /* AvatarPickerVC.swift */,
 				CEEF261E21F57F4300DA0E5A /* ProfileVC.swift */,
+				CE218BF921F7E55D000F0850 /* AddChannelVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEF261F21F57F4300DA0E5A /* ProfileVC.xib */,
+				CE218BFA21F7E55D000F0850 /* AddChannelVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE218BFC21F7E55D000F0850 /* AddChannelVC.xib in Resources */,
 				CEEF262121F57F4300DA0E5A /* ProfileVC.xib in Resources */,
 				CEA14A2F21EEEF0800FE6A24 /* LaunchScreen.storyboard in Resources */,
 				CEA14A2C21EEEF0800FE6A24 /* Assets.xcassets in Resources */,
@@ -332,6 +339,7 @@
 				CE50E02221EF2532005D785E /* CreateAccountVC.swift in Sources */,
 				CE50E02021EF1D5D005D785E /* LoginVC.swift in Sources */,
 				CE50E01B21EF03E4005D785E /* GradientView.swift in Sources */,
+				CE218BFB21F7E55D000F0850 /* AddChannelVC.swift in Sources */,
 				CEA14A2521EEEF0800FE6A24 /* AppDelegate.swift in Sources */,
 				CEEF261921F53D5900DA0E5A /* AvatarCell.swift in Sources */,
 				CE50E01221EEFA7B005D785E /* SWRevealViewController.m in Sources */,

@@ -142,6 +142,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbb-Wz-q8J">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -154,8 +160,10 @@
                             <constraint firstItem="r7O-i3-Yd9" firstAttribute="top" secondItem="JSu-uY-koq" secondAttribute="bottom" id="Oju-m4-HRU"/>
                             <constraint firstItem="JSu-uY-koq" firstAttribute="top" secondItem="EbR-s5-5F6" secondAttribute="top" id="SRo-oo-m3f"/>
                             <constraint firstItem="r7O-i3-Yd9" firstAttribute="leading" secondItem="yAa-gU-brW" secondAttribute="leading" id="ZOP-bv-8eD"/>
+                            <constraint firstItem="bbb-Wz-q8J" firstAttribute="leading" secondItem="yAa-gU-brW" secondAttribute="leading" constant="8" id="gwM-ph-wFh"/>
                             <constraint firstItem="JSu-uY-koq" firstAttribute="leading" secondItem="yAa-gU-brW" secondAttribute="leading" id="hj8-4N-Ala"/>
                             <constraint firstItem="Xef-aG-Fb1" firstAttribute="centerY" secondItem="fPL-Sd-XC8" secondAttribute="centerY" id="rUP-kM-Dt1"/>
+                            <constraint firstItem="fPL-Sd-XC8" firstAttribute="top" secondItem="bbb-Wz-q8J" secondAttribute="bottom" constant="6" id="sTm-12-qCQ"/>
                             <constraint firstItem="fPL-Sd-XC8" firstAttribute="leading" secondItem="yAa-gU-brW" secondAttribute="leading" id="xuY-hy-eVt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yAa-gU-brW"/>
@@ -166,19 +174,12 @@
                         <outlet property="messageTxtBox" destination="fPL-Sd-XC8" id="47X-O3-EKY"/>
                         <outlet property="sendBtn" destination="Xef-aG-Fb1" id="HJh-t5-01f"/>
                         <outlet property="tableView" destination="r7O-i3-Yd9" id="TKw-L8-wYQ"/>
+                        <outlet property="typingUsersLbl" destination="bbb-Wz-q8J" id="hKF-Kz-MbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSZ-cP-1g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="912.79999999999995" y="424.13793103448279"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="B9q-G8-Kho">
-            <objects>
-                <viewController id="QKc-8o-p1y" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hJg-xt-fN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1654" y="424"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="FlU-uU-7ID">
